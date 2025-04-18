@@ -23,11 +23,11 @@ int main(){
         std::cout << "TCP ADDRESS :: " << recv_addr->ext_tcp << endl;
         std::cout << "TCP PORT :: " << recv_addr->ext_tcp_port << endl;
         
-        recv_addr = handler.bind(method::tcp) // binding tcp for default port (1337)
+        recv_addr = handler.bind(methodS::tcp); // binding tcp for default port (1337)
         std::cout << "TCP ADDRESS :: " << recv_addr->ext_tcp << endl;
         std::cout << "TCP PORT :: " << recv_addr->ext_tcp_port << endl;
         
-        recv_addr = handler.bind() // binding http for port 80
+        recv_addr = handler.bind(); // binding http for port 80
         std::cout << "HTTP ADDRESS :: " << recv_addr->ext_http << endl;
 }
 ```
